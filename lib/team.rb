@@ -44,4 +44,8 @@ class Team
         
         value.sum
     end
+
+    def details
+        value_and_players = {"total_value" => total_value, "player_count" => player_count}
+    end
 end
