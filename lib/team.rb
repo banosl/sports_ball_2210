@@ -25,4 +25,13 @@ class Team
         end
         long_term
     end
+
+    def short_term_players
+        short_term = []
+        @roster.each do|player|
+
+        short_term << player if player.contract_length <= 24
+        end
+        short_term
+    end
 end
