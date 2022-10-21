@@ -8,5 +8,12 @@ RSpec.describe Team do
         expect(team).to be_instance_of(Team)
     end
 
+    it 'team roster is empty' do
+        team = Team.new("Dodgers", "Los Angeles")
+
+        expect(team.roster).to eq([])
+    end
+
+    
 
 end
