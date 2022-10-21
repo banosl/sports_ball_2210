@@ -8,4 +8,10 @@ class Player
         @monthly_cost = monthly_cost
         @contract_length = contract_length
     end
+
+    def first_name
+        first = name.split(" ")
+        first[0]
+    end
+
 end
