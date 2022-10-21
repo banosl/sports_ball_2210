@@ -14,4 +14,9 @@ class Player
         first[0]
     end
 
+    def last_name
+        last = name.split(" ")
+        last[1]
+    end
+
 end
