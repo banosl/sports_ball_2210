@@ -48,4 +48,10 @@ class Team
     def details
         value_and_players = {"total_value" => total_value, "player_count" => player_count}
     end
+
+    def average_cost_of_player
+        average_cost = total_value / 4 * 100
+
+        return "$#{average_cost}"
+    end
 end
