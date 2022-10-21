@@ -34,4 +34,14 @@ class Team
         end
         short_term
     end
+
+    def total_value
+        value = []
+
+        @roster.map do|player|
+           value << player.total_cost
+        end
+        
+        value.sum
+    end
 end
