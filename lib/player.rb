@@ -19,4 +19,8 @@ class Player
         last[1]
     end
 
+    def total_cost
+        total = @monthly_cost * @contract_length
+    end
+
 end
