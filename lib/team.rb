@@ -17,4 +17,12 @@ class Team
         @roster.count
     end
 
+    def long_term_players
+        long_term = []
+        @roster.each do|player|
+         
+        long_term << player if player.contract_length > 24
+        end
+        long_term
+    end
 end
